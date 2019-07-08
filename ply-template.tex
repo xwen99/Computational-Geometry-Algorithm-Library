@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{fancyhdr}  % 页眉页脚
+\usepackage{minted}    % 代码高亮
+\usepackage{geometry}
+\usepackage[colorlinks, linkcolor=black]{hyperref}  % 目录可跳转
+\setlength{\headheight}{15pt}
+
+\geometry{left=3cm,right=1cm,top=2cm,bottom=2cm} % 页边距
+% 定义页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Algorithm Library by WenXin}
+\fancyfoot[R]{\thepage}
+
+\title{Computational Geometry Algorithm Library}
+\author{WenXin}   
+
+\begin{document} 
+\maketitle % 封面
+\newpage % 换页
+\tableofcontents % 目录
+\newpage
+\section{二维几何}
+\subsection{基础工具}
+\inputminted[frame=lines,linenos,breaklines]{c++}{2D/Fundamental.cpp}
+
+\subsection{点与线段}
+\inputminted[frame=lines,linenos,breaklines]{c++}{2D/PointAndSegment.cpp}
+
+\subsection{多边形}
+\inputminted[frame=lines,linenos,breaklines]{c++}{2D/Polygon.cpp}
+
+\subsection{圆}
+\inputminted[frame=lines,linenos,breaklines]{c++}{2D/Circle.cpp}
+
+\subsection{球面}
+\inputminted[frame=lines,linenos,breaklines]{c++}{2D/Sphere.cpp}
+
+\subsection{半平面交}
+\inputminted[frame=lines,linenos,breaklines]{c++}{2D/HalfPlaneIntersection.cpp}
+
+%\twocolumn  % 分页显示
+\newpage
+\section{三维几何}
+\subsection{基础工具}
+\inputminted[frame=lines,linenos,breaklines]{c++}{3D/Fundamental.cpp}
+
+\subsection{距离/面积/体积}
+\inputminted[frame=lines,linenos,breaklines]{c++}{3D/DistanceAndArea.cpp}
+
+\subsection{三角形}
+\inputminted[frame=lines,linenos,breaklines]{c++}{3D/Triangle.cpp}
+
+\subsection{三维凸包}
+\inputminted[frame=lines,linenos,breaklines]{c++}{3D/3DConvexHull.cpp}
+
+\subsection{有理数类}
+\inputminted[frame=lines,linenos,breaklines]{c++}{3D/RatStruct.cpp}
+
+%\newpage
+%\section{Others}
+
+\end{document}
